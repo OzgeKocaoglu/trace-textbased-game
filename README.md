@@ -1,1 +1,4 @@
-# trace-textbased-game
+# TRACE
+
+Trace is a text based game made with unity.
+
