@@ -11,6 +11,7 @@ class UIManager: BaseObject
 
     public override void onAwakeBaseObject()
     {
+        
         Debug.Log("UI Manager awake");
     }
 
@@ -18,5 +19,6 @@ class UIManager: BaseObject
     {
         Debug.Log("UI Manager update");
         textPrefab.text = logManager.getLog();
+
     }
 }

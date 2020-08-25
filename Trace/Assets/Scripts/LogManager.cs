@@ -2,11 +2,13 @@
 
 class LogManager : ILog
 {
-    string log;
+
+    //TODO: Singleton Log Manager??
+    public static string log = "log manager is available";
 
     public string getLog()
     {
-        return "log manager is available";
+        return log;
     }
 
     public void printLog(string log)
@@ -14,11 +16,4 @@ class LogManager : ILog
         Debug.Log("merbs");
     }
 
-    public void setLog(string log)
-    {
-        if(log != null)
-        {
-            this.log = log;
-        }
-    }
 }
