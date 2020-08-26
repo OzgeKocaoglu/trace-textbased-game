@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3285c66c23c9f3449a0e917bb32eaa1f, type: 3}
   m_Name: First Step
   m_EditorClassIdentifier: 
-  name: First Step
+  questName: First Quest
   desc: Welcome to first step of your new life!

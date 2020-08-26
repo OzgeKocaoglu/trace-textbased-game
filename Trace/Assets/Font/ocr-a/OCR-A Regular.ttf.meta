@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 9778ff71325569d4d898732e7c236474
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: OCR-A
+  fontNames:
+  - OCR-A
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7ef1ae525cb63b149865f7fd747225a6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

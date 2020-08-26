@@ -4,16 +4,25 @@ class LogManager : ILog
 {
 
     //TODO: Singleton Log Manager??
-    public static string log = "log manager is available";
+    //TODO: Add set log and use console.
+    public static string log = "main log manager";
+    public static string staticLog = @" 
+Font: OCR-A   Reflection: no   Adjustment: left   Stretch: no
+                                               _____ ____    _      ____ _____ 
+                                              |____ |___ \  / \    / _  |_   _|
+                                                |_  |   | |/ _ \  | (_| | | |  
+                                               ___| |___| / ___ \  > _  | | |  
+                                              |_____|____/_/   \_\/_/ |_| |_|  
+                                                                               ";
 
     public string getLog()
     {
-        return log;
+        return staticLog;
     }
 
-    public void printLog(string log)
+    public string getDinamicLog()
     {
-        Debug.Log("merbs");
+        return log;
     }
 
 }
