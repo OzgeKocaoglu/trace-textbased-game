@@ -6,7 +6,7 @@ class LogManager : ILog
     //TODO: Singleton Log Manager??
     //TODO: Add set log and use console.
     public static string log = "main log manager";
-    public static string staticLog = @" 
+    public string staticLog = @" 
 Font: OCR-A   Reflection: no   Adjustment: left   Stretch: no
                                                _____ ____    _      ____ _____ 
                                               |____ |___ \  / \    / _  |_   _|
@@ -23,6 +23,11 @@ Font: OCR-A   Reflection: no   Adjustment: left   Stretch: no
     public string getDinamicLog()
     {
         return log;
+    }
+
+    public static void addLog(string newLog)
+    {
+        log = log + "\n" + newLog;
     }
 
 }

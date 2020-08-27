@@ -22,6 +22,6 @@ class Quest: ScriptableObject, IQuest
 
     public virtual void startQuest()
     {
-        LogManager.log = "This quest name is: "  + this.questName + "\n" + "This quest desc is: " +  this.desc + "\n";
+        LogManager.addLog("This quest name is: "  + this.questName + "\n" + "This quest desc is: " +  this.desc + "\n");
     }
 }

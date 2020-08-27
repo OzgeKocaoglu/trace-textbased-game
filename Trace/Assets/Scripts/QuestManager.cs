@@ -10,12 +10,12 @@ class QuestManager: BaseObject
     {
           for (int i = 0; i < quests.Length; i++)
             {
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.A))
             {
 
                 quests[0].startQuest();
             }
-            else if (Input.GetKey(KeyCode.Space))
+            else if (Input.GetKeyDown(KeyCode.Space))
             {
                 quests[1].startQuest();
             }
