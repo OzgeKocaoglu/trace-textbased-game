@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 class LogManager : ILog
 {
@@ -13,21 +14,25 @@ Font: OCR-A   Reflection: no   Adjustment: left   Stretch: no
                                                 |_  |   | |/ _ \  | (_| | | |  
                                                ___| |___| / ___ \  > _  | | |  
                                               |_____|____/_/   \_\/_/ |_| |_|  
-                                                                               ";
+                                                                              ";
+    [SerializeField]
+    List<Log> logs = new List<Log>();
+    public int maxMessages = 25;
 
-    public string getLog()
+    public void sendLog(string text)
+    {
+        if (logs.Count >= maxMessages)
+            logs.Remove(logs[0]);
+
+        Log newLog = new Log();
+        newLog.message = text;
+        logs.Add(newLog);
+    }
+   
+    public string printLog()
     {
         return staticLog;
     }
 
-    public string getDinamicLog()
-    {
-        return log;
-    }
-
-    public static void addLog(string newLog)
-    {
-        log = log + "\n" + newLog;
-    }
 
 }

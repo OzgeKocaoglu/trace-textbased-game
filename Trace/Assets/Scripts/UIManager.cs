@@ -8,19 +8,27 @@ class UIManager: BaseObject
     private Text textPrefab;
     [SerializeField]
     private Text staticTextPrefab;
+
+    public GameObject logPanel, textObject;
+
+    [SerializeField]
     private LogManager logManager = new LogManager();
 
 
     public override void onAwakeBaseObject()
     {
-        staticTextPrefab.text = logManager.getLog();
+        staticTextPrefab.text = logManager.printLog();
         Debug.Log("UI Manager awake");
     }
 
     public override void onUpdateBaseObject()
     {
-        Debug.Log("UI Manager update");
-        textPrefab.text = logManager.getDinamicLog();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            logManager.sendLog("You pressed space key");
+
+        }
 
     }
+
 }

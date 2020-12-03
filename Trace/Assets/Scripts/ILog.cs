@@ -2,7 +2,5 @@
 
 interface ILog
 {
-    string getLog();
-    string getDinamicLog();
+    void sendLog(string text);
 }
-
